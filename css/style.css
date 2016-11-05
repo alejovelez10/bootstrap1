@@ -1,0 +1,22 @@
+   @media (max-width: 991px)
+   {
+   .buscar{
+   margin-bottom: 20px;	    
+   }
+   }
+   .carousel
+   {
+   margin-bottom: 20px;
+   }
+   h4
+   {
+   font-weight: bold;
+   }
+   .tab-pane p
+   {
+   	padding: 10px;
+   }
+   .panel-default
+   {
+       margin-top: 10px;
+   }

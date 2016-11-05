@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Ecommerce</title>
+       <link rel= "stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Ecommerce</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Canasta</a></li>
+                  <li><a href="#">Salir</a></li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <div class="container">
+         <div class="row">
+            <div class= "col-md-3">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="input-group buscar">
+                        <input type="text" class="form-control" placeholder="Buscar Camisetas">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                     </div>
+                     <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+               </div>
+               <br>
+               <div class="row">
+                  <div class="col-md-12  hidden-xs hidden-sm">
+                     <h4>Categorias</h4>
+                     <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                        Todos<span class="badge">100</span>
+                        </a>
+                        <a href="#" class="list-group-item">Hombre<span class="badge">4</span></a>
+                        <a href="#" class="list-group-item">Mujer<span class="badge">12</span></a>
+                        <a href="#" class="list-group-item">hipster<span class="badge">24</span></a>
+                        <a href="#" class="list-group-item">Metal<span class="badge">6</span></a>
+                        <a href="#" class="list-group-item">Universidad<span class="badge">5</span></a>
+                        <a href="#" class="list-group-item">Deportiva<span class="badge">8</span></a>
+                        <a href="#" class="list-group-item">Raya<span class="badge">11</span></a>
+                        <a href="#" class="list-group-item">Apretada<span class="badge">10</span></a>
+                     </div>
+                  </div>
+                  <!-- /.col-lg-6 -->
+               </div>
+            </div>
+            <div class= "col-md-9">
+               <div class="row carousel">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                           <img src="images/banner-slider-2.jpg" alt="Flower">
+                        </div>
+                        <div class="item">
+                           <img src="images/banner-slider-1.jpg" alt="Chania">
+                        </div>
+                        <div class="item">
+                           <img src="images/banner-slider-2.jpg" alt="Flower">
+                        </div>
+                     </div>
+                     <!-- Left and right controls -->
+                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 col-xs-6 col-sm-4">
+                     <div class="thumbnail">
+                        <img src="images/camiseta-1.jpg" alt="camiseta-1">
+                        <div class="caption">
+                           <h4>Hipster Ultimate</h4>
+                           <p>La camiseta ideal para los hipsters</p>
+                           <p><a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span> </a> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#gridSystemModal">
+                              detalles
+                              </button>
+                           </p>
+                        </div>
+                     </div>
+                     <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                 <h4 class="modal-title" id="gridModalLabel">Hipster Ultimate </h4>
+                              </div>
+                              <div class="modal-body">
+                                 <div class="container-fluid bd-example-row">
+                                    <div class="row">
+                                       <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Este producto esta agotado</div>
+                                       <div class="col-md-6"><img src="images/camiseta-1.jpg" alt="camiseta-1"></div>
+                                       <div class="col-md-6">
+                                          <p>Precio: <strong>$299</strong></p>
+                                          <p>Calificacion: <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></p>
+                                          <p><span class="label label-default">Hipster</span>
+                                             <span class="label label-warning">Deportiva</span>
+                                          </p>
+                                          <p><a href ="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></p>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div>
+                                             <!-- Nav tabs -->
+                                             <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
+                                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Comentarios</a></li>
+                                             </ul>
+                                             <!-- Tab panes -->
+                                             <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="home">
+                                                   <p>
+                                                      Una camiseta, franela, casaca, playera, polera, polo o remera es una prenda de vestir por lo general de mangas cortas, cuello redondo, sin bolsillos y sin botones a lo largo de su parte frontal (este último detalle es el que las distingue de las camisas, aunque pueden tener dos o tres en la parte superior delantera.
+                                                   </p>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="profile">
+                                                   <div class="panel panel-default">
+                                                      <div class="panel-heading">Alejandro Vélez Comentó hace un año</div>
+                                                      <div class="panel-body">
+                                                         Me gusta mucho esta camiseta pero esta muy cara
+                                                      </div>
+                                                   </div>
+                                                   <textarea class="form-control" rows="5" placeholder="Ingrese aqui tu comentario"></textarea>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                 <button type="button" class="btn btn-primary">Comprar</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-xs-6 col-sm-4">
+                     <div class="thumbnail">
+                        <img src="images/camiseta-2.jpg" alt="camiseta-2">
+                        <div class="caption">
+                           <h4>On Motion Live</h4>
+                           <p>Perfecta para salidas Informales</p>
+                           <p><a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span> </a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4  col-xs-6 col-sm-4">
+                     <div class="thumbnail">
+                        <img src="images/camiseta-3.jpg" alt="camiseta-3">
+                        <div class="caption">
+                           <h4>Underground Max</h4>
+                           <p>Para los amantes del underground</p>
+                           <p><a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span> </a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4  col-xs-6 col-sm-6">
+                     <div class="thumbnail">
+                        <img src="images/camiseta-4.jpg" alt="camiseta-4">
+                        <div class="caption">
+                           <h4>Santo Domingo Tigers</h4>
+                           <p>Para ocaciones especiales</p>
+                           <p><a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span> </a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-xs-6 col-sm-4">
+                     <div class="thumbnail">
+                        <img src="images/camiseta-5.jpg" alt="camiseta-5">
+                        <div class="caption">
+                           <h4>Una camiseta mas</h4>
+                           <p>Para cualquier día</p>
+                           <p><a href="#" class="btn btn-primary" role="button">$299 <span class="glyphicon glyphicon-shopping-cart"></span> </a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
